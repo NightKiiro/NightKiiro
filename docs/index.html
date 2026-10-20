@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>Slimy — by NightKiiro</title>
+<meta name="description" content="Two slimes, one controller. A tiny platformer by NightKiiro, with merging and splitting slimes." />
+<link rel="icon" href="assets/sprites/teal-r.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg: #07060f; --ink: #EDE9FE; --accent: #7CFC9A; --violet: #A78BFA; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); overflow: hidden;
+    font-family: 'Press Start 2P', monospace; -webkit-user-select: none; user-select: none; touch-action: none; }
+  #wrap { position: fixed; inset: 0; display: grid; place-items: center; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block;
+    width: min(100vw, calc(100vh * 960 / 544)); height: auto; aspect-ratio: 960 / 544;
+    box-shadow: 0 0 0 4px #2A2350, 0 0 60px rgba(124, 252, 154, .12); border-radius: 6px; }
+  #end-links[hidden] { display: none; }
+  #end-links { position: fixed; left: 50%; bottom: 14%; transform: translateX(-50%); display: flex; gap: 14px; }
+  #end-links a, #end-links button { font: inherit; font-size: 11px; color: #0D0B1E; background: var(--accent);
+    border: 0; padding: 12px 14px; text-decoration: none; cursor: pointer; box-shadow: 0 4px 0 #2E8B57; }
+  #end-links a.alt { background: var(--violet); box-shadow: 0 4px 0 #6B5FA8; }
+
+  /* touch controls */
+  #pad { display: none; position: fixed; inset: auto 0 0 0; padding: 14px 18px; justify-content: space-between;
+    pointer-events: none; }
+  .touch #pad { display: flex; }
+  #pad .grp { display: flex; gap: 12px; pointer-events: auto; }
+  #pad button { width: 64px; height: 64px; border-radius: 14px; border: 3px solid #3B3270; background: rgba(42, 35, 80, .75);
+    color: var(--ink); font: inherit; font-size: 16px; touch-action: none; }
+  #pad button:active, #pad button.on { background: rgba(124, 252, 154, .35); }
+  @media (orientation: portrait) {
+    .touch #rotate { display: grid; }
+  }
+  #rotate { display: none; position: fixed; inset: 0; background: var(--bg); place-items: center; text-align: center;
+    font-size: 12px; line-height: 2; padding: 30px; z-index: 5; color: var(--violet); }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="960" height="544" aria-label="Slimy game"></canvas></div>
+
+<div id="end-links" hidden>
+  <button onclick="location.reload()">PLAY AGAIN</button>
+  <a class="alt" href="https://github.com/NightKiiro">NIGHTKIIRO ON GITHUB</a>
+</div>
+
+<div id="pad">
+  <div class="grp">
+    <button data-a="left" aria-label="left">◀</button>
+    <button data-a="right" aria-label="right">▶</button>
+  </div>
+  <div class="grp">
+    <button data-a="restart" aria-label="restart">↺</button>
+    <button data-a="merge" aria-label="merge or split">F</button>
+    <button data-a="jump" aria-label="jump">▲</button>
+  </div>
+</div>
+<div id="rotate">↻<br/>Turn your phone sideways to play</div>
+
+<script src="levels.js"></script>
+<script src="game.js"></script>
+<script>
+  // touch buttons -> same actions as the keyboard
+  document.querySelectorAll("#pad button").forEach((b) => {
+    const a = b.dataset.a;
+    const down = (e) => { e.preventDefault(); b.classList.add("on"); window.SlimyInput.press(a); };
+    const up = (e) => { e.preventDefault(); b.classList.remove("on"); window.SlimyInput.release(a); };
+    b.addEventListener("pointerdown", down);
+    ["pointerup", "pointercancel", "pointerleave"].forEach((ev) => b.addEventListener(ev, up));
+  });
+</script>
+</body>
+</html>
