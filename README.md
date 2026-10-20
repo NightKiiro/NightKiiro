@@ -62,118 +62,30 @@
 
 ---
 
-## 🧪 Escape the Lab — a tiny playable adventure
+## 🧪 Play Slimy — right here
 
-> You are **Subject #2**, a small blue slime in a containment tube.
-> The alarm is off. The scientist is on a coffee break.
-> **Click to make your choices.**
+This is a real mini version of **Slimy**, the game I'm making at Epitech, and everyone who visits plays the **same board**.
 
-<details>
-<summary><b>▶ START GAME</b></summary>
+**Rules:** both slimes get **the same move**. A slime that bumps into a wall stays put. Use the walls to bring them together: when they land on the same tile they **merge** into one big slime. Get the big slime to the **EXIT** to clear the level.
 
-<br/>
+**How to play:** click an arrow. It opens a ready-made issue: just press *Submit*. A GitHub Action plays your move and updates the board within about a minute.
 
-The glass cracks. You ooze out onto the cold floor. Ahead of you: a **locked door**, a **terminal** blinking in the dark, and a **ventilation grate**.
+<!-- SLIMY:START -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NightKiiro/NightKiiro/main/game/board.svg?v=0" alt="Slimy board" />
+</p>
 
-<details>
-<summary>🖥️ Walk up to the terminal</summary>
+<table align="center">
+<tr><td></td><td align="center"><a href="https://github.com/NightKiiro/NightKiiro/issues/new?title=slimy%7Cmove%7Cup&body=Just+press+Submit!+Your+move+is+played+automatically+in+about+a+minute.">⬆️</a></td><td></td></tr>
+<tr><td align="center"><a href="https://github.com/NightKiiro/NightKiiro/issues/new?title=slimy%7Cmove%7Cleft&body=Just+press+Submit!+Your+move+is+played+automatically+in+about+a+minute.">⬅️</a></td><td align="center"><sub>move</sub></td><td align="center"><a href="https://github.com/NightKiiro/NightKiiro/issues/new?title=slimy%7Cmove%7Cright&body=Just+press+Submit!+Your+move+is+played+automatically+in+about+a+minute.">➡️</a></td></tr>
+<tr><td></td><td align="center"><a href="https://github.com/NightKiiro/NightKiiro/issues/new?title=slimy%7Cmove%7Cdown&body=Just+press+Submit!+Your+move+is+played+automatically+in+about+a+minute.">⬇️</a></td><td></td></tr>
+</table>
 
-<br/>
+<p align="center"><sub><a href="https://github.com/NightKiiro/NightKiiro/issues/new?title=slimy%7Creset&body=Just+press+Submit!+Your+move+is+played+automatically+in+about+a+minute.">🔄 restart this level</a> · 0 moves played · 0 levels cleared by the community</sub></p>
 
-```
-SUPPORTDESK v2.3 — RESTRICTED
-login: _
-```
+<!-- SLIMY:END -->
 
-<details>
-<summary>⌨️ Type <code>admin / admin</code></summary>
-
-<br/>
-
-```
-[ALERT] Failed login detected — rule #4012 triggered
-[ALERT] Sentinel X: brute-force pattern, source = slime
-```
-
-🚨 Red lights everywhere. The blue team saw you coming (I wrote those detection rules).
-
-**💀 GAME OVER** — *close ▶ START GAME and try again.*
-
-</details>
-
-<details>
-<summary>📝 Read the sticky note on the screen first</summary>
-
-<br/>
-
-> *"Password = the name of the game I'm building. Lowercase. — A."*
-
-<details>
-<summary>⌨️ Type <code>slimy</code></summary>
-
-<br/>
-
-```
-ACCESS GRANTED. Door 2B: UNLOCKED
-```
-
-The door slides open… but a laser grid blocks the corridor. Behind you, a green slime oozes out of the next tube. *Hi.*
-
-<details>
-<summary>🟦🟩 Merge with the green slime</summary>
-
-<br/>
-
-<p align="center"><img src="assets/slime-fusion.gif" width="192" alt="Blue and green slimes merging then splitting" /></p>
-
-Together you're big enough to sit on the pressure plate. The grid shuts down. You split again, slide through, and the exit opens.
-
-### 🎉 YOU ESCAPED!
-
-🏆 *Achievement unlocked: **Lab Escapee*** — now go read the [quest log](#-quest-log) to see what else was built in this lab.
-
-</details>
-
-<details>
-<summary>🏃 Rush through the lasers alone</summary>
-
-<br/>
-
-Zap. You're now a very small puddle.
-
-**💀 GAME OVER** — *hint: you're not the only slime in this lab.*
-
-</details>
-
-</details>
-
-</details>
-
-</details>
-
-<details>
-<summary>🌀 Squeeze into the ventilation grate</summary>
-
-<br/>
-
-It's dark, dusty and full of cables. You crawl for a long time… and fall right into the **server room**. One screen shows a dashboard full of graphs.
-
-<details>
-<summary>👀 Look at the dashboard</summary>
-
-<br/>
-
-`CPU 12% · RAM 41% · failed_logins: 0 · anomalies: 1 (blue, gelatinous, in vent C)`
-
-You've been spotted by monitoring. Somebody here takes observability seriously. 👋
-
-**💀 GAME OVER** — *the terminal path might be smarter…*
-
-</details>
-
-</details>
-
-</details>
+<sub>Under the hood: issue → GitHub Action → Python script (no dependencies) → new board SVG with my Pixelorama sprites → commit. Source in [`game/`](game/).</sub>
 
 ---
 
