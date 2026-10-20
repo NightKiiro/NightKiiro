@@ -11,28 +11,6 @@
 
 ---
 
-## 🕹️ Play Slimy
-
-<p align="center">
-  <a href="https://nightkiiro.github.io/NightKiiro/">
-    <img src="assets/slimy-preview.webp" width="640" alt="Slimy gameplay: the two slimes fuse, push a heavy block onto a plate, the door opens, they split and reach the exits" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://nightkiiro.github.io/NightKiiro/"><img src="assets/play-button.svg" width="300" alt="Play Slimy" /></a>
-</p>
-
-<p align="center">
-<b>Two slimes, one controller.</b> Both slimes copy your moves, so use the walls to get them in sync.<br/>
-<b>Fuse</b> into a heavy slime to push blocks and press heavy plates, <b>split</b> to slip through tunnels,<br/>
-and get each slime into its own exit door. 6 levels, stars to earn, keyboard or touch.
-</p>
-
-<p align="center"><sub>Web version of the Java puzzle-platformer I'm making at Epitech: same art, same sounds, same physics (ported to JavaScript and checked against the original's solutions), brand new levels. Source in <a href="docs/"><code>docs/</code></a>.</sub></p>
-
----
-
 ## 🎮 Player profile
 
 <table>
@@ -62,7 +40,7 @@ and get each slime into its own exit door. 6 levels, stars to earn, keyboard or 
 |---|---|---|---|---|
 | 🛡️ | **Sentinel X** | Turning a vulnerable support app into something observable: structured JSON logs, metrics, dashboards, then writing my own intrusion detection rules | Wazuh · Prometheus · Grafana · Docker | 🔨 in progress |
 | 🧠 | **Codename** | Exploring prompt injection on a locally hosted LLM | Ollama · Python | 🔨 in progress |
-| 🟢 | **[Slimy](https://nightkiiro.github.io/NightKiiro/)** ▶ | A Java platformer where you control two slimes that merge and split to escape a lab (yes, the ones in the banner). Team of 3, 10 levels. I draw the sprites, make the music and the retro arcade title screen | Java · Pixelorama | 🔨 in progress |
+| 🟢 | **Slimy** | A Java platformer where you control two slimes that merge and split to escape a lab (yes, the ones in the banner). Team of 3, 10 levels. I draw the sprites, make the music and the retro arcade title screen | Java · Pixelorama | 🔨 in progress |
 | 🎰 | **La Cave** | A virtual casino with play-money chips, side project with a friend. I'm on the front: a cinematic scroll from a night street down into the gaming hall | JavaScript · GSAP · Lenis | 🔨 in progress |
 | 🧃 | **[Hack and Juice](https://github.com/NightKiiro/Projet_Epitech_Hack-And-Juice)** | Finding and exploiting web vulnerabilities | Web security | ✅ done |
 
