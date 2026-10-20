@@ -1,0 +1,12 @@
+# Solution of level 2 — one line = keys held + number of steps (1 step = 1/60 s). Keys: LEFT, RIGHT, JUMP, FUSE (joined with +), WAIT = no key.
+RIGHT 200
+RIGHT+JUMP 1
+RIGHT 50
+RIGHT+JUMP 1
+RIGHT 120
+RIGHT+JUMP 1
+RIGHT 60
+RIGHT+JUMP 1
+RIGHT 60
+RIGHT+JUMP 1
+RIGHT 60

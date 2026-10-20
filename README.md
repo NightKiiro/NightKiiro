@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://nightkiiro.github.io/NightKiiro/">
-    <img src="assets/slimy-preview.gif" width="640" alt="Slimy gameplay: two slimes merge, the big one jumps over a wall and reaches the exit" />
+    <img src="assets/slimy-preview.webp" width="640" alt="Slimy gameplay: the two slimes fuse, push a heavy block onto a plate, the door opens, they split and reach the exits" />
   </a>
 </p>
 
@@ -24,11 +24,12 @@
 </p>
 
 <p align="center">
-<b>Two slimes, one controller.</b> Both slimes copy your moves: use the walls to bring them together,<br/>
-<b>merge</b> to jump higher and press heavy buttons, <b>split</b> to squeeze through vents. 5 levels, plays in the browser (keyboard or touch).
+<b>Two slimes, one controller.</b> Both slimes copy your moves, so use the walls to get them in sync.<br/>
+<b>Fuse</b> into a heavy slime to push blocks and press heavy plates, <b>split</b> to slip through tunnels,<br/>
+and get each slime into its own exit door. 6 levels, stars to earn, keyboard or touch.
 </p>
 
-<p align="center"><sub>A web mini version of the Java game I'm making at Epitech, with my own Pixelorama sprites. Source in <a href="docs/"><code>docs/</code></a>.</sub></p>
+<p align="center"><sub>Web version of the Java puzzle-platformer I'm making at Epitech: same art, same sounds, same physics (ported to JavaScript and checked against the original's solutions), brand new levels. Source in <a href="docs/"><code>docs/</code></a>.</sub></p>
 
 ---
 
