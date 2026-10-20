@@ -17,8 +17,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/slime-trail.svg?color_snake=#4CC777&color_dots=#ebedf0,#c8f7d5,#9ff0b5,#7CFC9A,#2E8B57
-            dist/slime-trail-dark.svg?palette=github-dark&color_snake=#7CFC9A&color_dots=#161b22,#1E5B3A,#2E8B57,#4CC777,#7CFC9A
+            dist/slime-trail.svg?color_snake=#5FB3A0&color_dots=#ebedf0,#c8f7d5,#9ff0b5,#7CFC9A,#2E8B57
+            dist/slime-trail-dark.svg?palette=github-dark&color_snake=#5FB3A0&color_dots=#161b22,#1E5B3A,#2E8B57,#4CC777,#7CFC9A
 
       - name: Push the result to the "output" branch
         uses: crazy-max/ghaction-github-pages@v4

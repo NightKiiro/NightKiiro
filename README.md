@@ -1,21 +1,70 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="NightKiiro — two pixel slimes escaping a lab" width="100%" />
+<img src="assets/banner.svg" alt="NightKiiro — two pixel slimes merging and splitting in a lab" width="100%" />
 
 <!-- 🕵️ You opened the source. Respect. Lab log #1 (base64): RkxBR3tzbDFteV8=  — log #2 is hidden inside the banner. -->
 
-**Alexia · 2nd-year @ Epitech Marseille · cybersecurity & dev**
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/alexia-regnier-7b88943a0)
-[![Email](https://img.shields.io/badge/Email-7CFC9A?style=for-the-badge&logo=gmail&logoColor=14112B)](mailto:regnieralexia13@gmail.com)
+[![Email](https://img.shields.io/badge/Email-5FB3A0?style=for-the-badge&logo=gmail&logoColor=white)](mailto:regnieralexia13@gmail.com)
 
 </div>
 
 ---
 
+## 🎮 Player profile
+
+<table>
+<tr>
+<td width="140" align="center">
+<img src="assets/slime-blue.gif" width="96" alt="Blue slime idle" />
+<br/><sub><b>NightKiiro</b></sub>
+</td>
+<td>
+
+| | |
+|---|---|
+| **Name** | Alexia |
+| **Class** | Student developer · Epitech Marseille (Bachelor, 2nd year) |
+| **Main quest** | Cybersecurity: blue team, observability & detection engineering |
+| **Side quests** | Game dev, pixel art, front-end with a bit of motion |
+| **Home base** | Ubuntu 🐧 |
+| **Also** | I review first-year students' project defenses at Epitech |
+
+</td>
+</tr>
+</table>
+
+## 📜 Quest log
+
+| | Quest | What I'm doing | Stack | Status |
+|---|---|---|---|---|
+| 🛡️ | **Sentinel X** | Turning a vulnerable support app into something observable: structured JSON logs, metrics, dashboards, then writing my own intrusion detection rules | Wazuh · Prometheus · Grafana · Docker | 🔨 in progress |
+| 🧠 | **Codename** | Exploring prompt injection on a locally hosted LLM | Ollama · Python | 🔨 in progress |
+| 🟢 | **Slimy** | A Java platformer where you control two slimes that merge and split to escape a lab (yes, the ones in the banner). Team of 3, 10 levels. I draw the sprites, make the music and the retro arcade title screen | Java · Pixelorama | 🔨 in progress |
+| 🎰 | **La Cave** | A virtual casino with play-money chips, side project with a friend. I'm on the front: a cinematic scroll from a night street down into the gaming hall | JavaScript · GSAP · Lenis | 🔨 in progress |
+| 🧃 | **[Hack and Juice](https://github.com/NightKiiro/Projet_Epitech_Hack-And-Juice)** | Finding and exploiting web vulnerabilities | Web security | ✅ done |
+
+<sub>Earlier Epitech quests: [E-todo](https://github.com/NightKiiro/Projet_Epitech_E-todo) · [API Hackathon](https://github.com/NightKiiro/API-Hackathon) · [YOWL Product Design](https://github.com/NightKiiro/Projet_Epitech_YOWL-Product-Design) · [Hackathon Product Design](https://github.com/NightKiiro/Projet_Epitech_Hackathon-Product-Design)</sub>
+
+## 🌳 Skill tree
+
+**🛡️ Security & ops**
+<br/>
+<img src="https://skillicons.dev/icons?i=linux,ubuntu,docker,grafana,prometheus,bash" alt="Security and ops tools" /> &nbsp;+ Wazuh
+
+**💻 Dev**
+<br/>
+<img src="https://skillicons.dev/icons?i=java,python,ts,js,nodejs,mysql,sqlite,git" alt="Development tools" />
+
+**🎨 Creative**
+<br/>
+<img src="https://skillicons.dev/icons?i=html,css" alt="Front-end tools" /> &nbsp;+ GSAP · Lenis · Pixelorama
+
+---
+
 ## 🧪 Escape the Lab — a tiny playable adventure
 
-> You are **Subject #2**, a small green slime in a containment tube.
+> You are **Subject #2**, a small blue slime in a containment tube.
 > The alarm is off. The scientist is on a coffee break.
 > **Click to make your choices.**
 
@@ -68,38 +117,31 @@ login: _
 ACCESS GRANTED. Door 2B: UNLOCKED
 ```
 
-The door slides open… but a laser grid blocks the corridor. You can't get through alone.
+The door slides open… but a laser grid blocks the corridor. Behind you, a green slime oozes out of the next tube. *Hi.*
 
 <details>
-<summary>🟢🟢 Split into two slimes</summary>
+<summary>🟦🟩 Merge with the green slime</summary>
 
 <br/>
 
-One half sits on the pressure plate 🟢, the grid shuts down, the other half slides through 🟢 and opens the exit from the other side. You merge back together. *Teamwork, but with yourself.*
+<p align="center"><img src="assets/slime-fusion.gif" width="192" alt="Blue and green slimes merging then splitting" /></p>
+
+Together you're big enough to sit on the pressure plate. The grid shuts down. You split again, slide through, and the exit opens.
 
 ### 🎉 YOU ESCAPED!
 
-You find the lab's files on the way out:
-
-| | Project | What's inside |
-|---|---|---|
-| 🛡️ | **Sentinel X** | Blue team project: logs, Prometheus/Grafana dashboards, Wazuh and my own intrusion detection rules on a vulnerable app |
-| 🟢 | **Slimy** | The game you just lived in: a Java platformer with two slimes that merge and split. I did the pixel art, the music and the arcade title screen |
-| 🎰 | **La Cave** | A virtual casino with play-money chips. I'm on the front: a cinematic scroll from a night street down into the gaming hall |
-| 🧃 | **[Hack and Juice](https://github.com/NightKiiro/Projet_Epitech_Hack-And-Juice)** | Finding and exploiting web vulnerabilities |
-
-🏆 *Achievement unlocked: **Lab Escapee***
+🏆 *Achievement unlocked: **Lab Escapee*** — now go read the [quest log](#-quest-log) to see what else was built in this lab.
 
 </details>
 
 <details>
-<summary>🏃 Rush through the lasers</summary>
+<summary>🏃 Rush through the lasers alone</summary>
 
 <br/>
 
 Zap. You're now a very small puddle.
 
-**💀 GAME OVER** — *hint: you're a slime. Slimes can split.*
+**💀 GAME OVER** — *hint: you're not the only slime in this lab.*
 
 </details>
 
@@ -114,14 +156,14 @@ Zap. You're now a very small puddle.
 
 <br/>
 
-It's dark, dusty and full of cables. You crawl for a long time… and fall right into the **server room**. Rows of blinking machines. One screen shows a dashboard full of graphs.
+It's dark, dusty and full of cables. You crawl for a long time… and fall right into the **server room**. One screen shows a dashboard full of graphs.
 
 <details>
 <summary>👀 Look at the dashboard</summary>
 
 <br/>
 
-`CPU 12% · RAM 41% · failed_logins: 0 · anomalies: 1 (green, gelatinous, in vent C)`
+`CPU 12% · RAM 41% · failed_logins: 0 · anomalies: 1 (blue, gelatinous, in vent C)`
 
 You've been spotted by monitoring. Somebody here takes observability seriously. 👋
 
@@ -137,20 +179,19 @@ You've been spotted by monitoring. Somebody here takes observability seriously. 
 
 ## 🚩 Hidden flag
 
-There's a flag hidden in this profile, in two pieces. Format: `FLAG{...}`.
-Find it, decode it, and send it to me on LinkedIn: you'll earn my eternal respect (and a spot in the hall of fame below).
+There's a flag hidden in this profile, split in two pieces. Format: `FLAG{...}`.
+Find it, decode it, and send it to me on LinkedIn to earn my eternal respect and a spot in the hall of fame.
 
 **Hall of fame:** *nobody yet… 👀*
 
 ---
 
-## 🧰 Inventory
+## 📊 Lab monitoring
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,ts,js,python,bash,nodejs,mysql,sqlite,docker,git,linux,ubuntu,grafana,prometheus&perline=7" alt="Tech stack" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=NightKiiro&show_icons=true&hide_border=true&count_private=true&bg_color=0D0B1E&title_color=A78BFA&icon_color=5FB3A0&text_color=EDE9FE" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NightKiiro&layout=compact&hide_border=true&bg_color=0D0B1E&title_color=A78BFA&text_color=EDE9FE" alt="Top languages" />
 </p>
-
-## 🐍 Slime trail
 
 <p align="center">
   <picture>
@@ -160,5 +201,7 @@ Find it, decode it, and send it to me on LinkedIn: you'll earn my eternal respec
 </p>
 
 <div align="center">
-<sub>Built by a slime that escaped. Probably still in the vents.</sub>
+<img src="assets/slime-green.gif" width="48" alt="Green slime" />
+<br/>
+<sub>Sprites drawn by me in Pixelorama. Built by a slime that escaped — probably still in the vents.</sub>
 </div>
