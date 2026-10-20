@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="NightKiiro - two pixel slimes escaping a lab">
+<!-- 🧪 lab log #2 : 337363347033645f7468335f6c34627d -->
+<style>
+  .bob { animation: bob 0.9s steps(2) infinite; }
+  .bob2 { animation: bob 0.9s steps(2) infinite; animation-delay: .45s; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+  .left  { animation: goLeft 6s ease-in-out infinite; }
+  .right { animation: goRight 6s ease-in-out infinite; }
+  @keyframes goLeft  { 0%,15% { transform: translateX(0); } 45%,60% { transform: translateX(150px); } 90%,100% { transform: translateX(0); } }
+  @keyframes goRight { 0%,15% { transform: translateX(0); } 45%,60% { transform: translateX(-150px); } 90%,100% { transform: translateX(0); } }
+
+  .merge { opacity: 0; animation: merge 6s infinite; }
+  @keyframes merge { 0%,44% { opacity: 0; } 47%,58% { opacity: 1; } 61%,100% { opacity: 0; } }
+
+  .bubble { animation: rise 3.5s linear infinite; opacity: 0; }
+  @keyframes rise { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .9; } 100% { transform: translateY(-120px); opacity: 0; } }
+
+  .dust { animation: twinkle 4s steps(2) infinite; }
+  @keyframes twinkle { 0%,100% { opacity: .15; } 50% { opacity: .8; } }
+
+  .alarm { animation: alarm 1.2s steps(1) infinite; }
+  @keyframes alarm { 0%,50% { fill: #FF4D6D; } 51%,100% { fill: #4A1424; } }
+
+  .cursor { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+
+  .type { clip-path: inset(0 100% 0 0); animation: type 3s steps(34) 0.4s forwards; }
+  @keyframes type { to { clip-path: inset(0 0 0 0); } }
+
+  .scan { animation: scan 5s linear infinite; }
+  @keyframes scan { 0% { transform: translateY(-20px); } 100% { transform: translateY(300px); } }
+
+  .title { font: 700 54px "Courier New", ui-monospace, monospace; letter-spacing: 6px; }
+  .sub { font: 600 17px "Courier New", ui-monospace, monospace; }
+  .tag { font: 700 12px "Courier New", ui-monospace, monospace; letter-spacing: 2px; }
+</style>
+
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#231C45" stroke-width="1"/>
+  </pattern>
+  <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7CFC9A" stop-opacity="0"/>
+    <stop offset="1" stop-color="#7CFC9A" stop-opacity=".18"/>
+  </linearGradient>
+  <g id="slime"><rect x="28" y="0" width="7" height="7" fill="#1E5B3A"/><rect x="35" y="0" width="7" height="7" fill="#1E5B3A"/><rect x="42" y="0" width="7" height="7" fill="#1E5B3A"/><rect x="49" y="0" width="7" height="7" fill="#1E5B3A"/><rect x="14" y="7" width="7" height="7" fill="#1E5B3A"/><rect x="21" y="7" width="7" height="7" fill="#1E5B3A"/><rect x="28" y="7" width="7" height="7" fill="#7CFC9A"/><rect x="35" y="7" width="7" height="7" fill="#7CFC9A"/><rect x="42" y="7" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="7" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="7" width="7" height="7" fill="#1E5B3A"/><rect x="63" y="7" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="14" width="7" height="7" fill="#1E5B3A"/><rect x="14" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="14" width="7" height="7" fill="#E6FFEE"/><rect x="35" y="14" width="7" height="7" fill="#E6FFEE"/><rect x="42" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="63" y="14" width="7" height="7" fill="#7CFC9A"/><rect x="70" y="14" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="21" width="7" height="7" fill="#1E5B3A"/><rect x="14" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="21" width="7" height="7" fill="#E6FFEE"/><rect x="28" y="21" width="7" height="7" fill="#E6FFEE"/><rect x="35" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="42" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="63" y="21" width="7" height="7" fill="#7CFC9A"/><rect x="70" y="21" width="7" height="7" fill="#1E5B3A"/><rect x="0" y="28" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="14" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="28" width="7" height="7" fill="#14112B"/><rect x="35" y="28" width="7" height="7" fill="#14112B"/><rect x="42" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="28" width="7" height="7" fill="#14112B"/><rect x="63" y="28" width="7" height="7" fill="#14112B"/><rect x="70" y="28" width="7" height="7" fill="#7CFC9A"/><rect x="77" y="28" width="7" height="7" fill="#1E5B3A"/><rect x="0" y="35" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="14" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="35" width="7" height="7" fill="#14112B"/><rect x="35" y="35" width="7" height="7" fill="#FFFFFF"/><rect x="42" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="35" width="7" height="7" fill="#14112B"/><rect x="63" y="35" width="7" height="7" fill="#FFFFFF"/><rect x="70" y="35" width="7" height="7" fill="#7CFC9A"/><rect x="77" y="35" width="7" height="7" fill="#1E5B3A"/><rect x="0" y="42" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="14" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="35" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="42" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="63" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="70" y="42" width="7" height="7" fill="#7CFC9A"/><rect x="77" y="42" width="7" height="7" fill="#1E5B3A"/><rect x="0" y="49" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="14" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="21" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="35" y="49" width="7" height="7" fill="#2E8B57"/><rect x="42" y="49" width="7" height="7" fill="#2E8B57"/><rect x="49" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="63" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="70" y="49" width="7" height="7" fill="#7CFC9A"/><rect x="77" y="49" width="7" height="7" fill="#1E5B3A"/><rect x="0" y="56" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="56" width="7" height="7" fill="#4CC777"/><rect x="14" y="56" width="7" height="7" fill="#4CC777"/><rect x="21" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="28" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="35" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="42" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="49" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="56" y="56" width="7" height="7" fill="#7CFC9A"/><rect x="63" y="56" width="7" height="7" fill="#4CC777"/><rect x="70" y="56" width="7" height="7" fill="#4CC777"/><rect x="77" y="56" width="7" height="7" fill="#1E5B3A"/><rect x="7" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="14" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="21" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="28" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="35" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="42" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="49" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="56" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="63" y="63" width="7" height="7" fill="#1E5B3A"/><rect x="70" y="63" width="7" height="7" fill="#1E5B3A"/></g>
+</defs>
+
+<!-- background -->
+<rect width="900" height="300" rx="14" fill="#0D0B1E"/>
+<rect width="900" height="300" rx="14" fill="url(#grid)"/>
+<rect class="dust" style="animation-delay:1.58s" x="331" y="38" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.29s" x="49" y="18" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.33s" x="96" y="93" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.15s" x="519" y="54" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.28s" x="444" y="107" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.7s" x="92" y="141" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.5s" x="846" y="144" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.79s" x="228" y="149" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.59s" x="590" y="149" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.23s" x="226" y="11" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.68s" x="136" y="74" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.28s" x="553" y="30" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.41s" x="573" y="46" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.49s" x="584" y="48" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.26s" x="560" y="16" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.99s" x="633" y="52" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.11s" x="544" y="109" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.69s" x="476" y="149" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.99s" x="370" y="76" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.33s" x="184" y="62" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.98s" x="307" y="134" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.15s" x="351" y="114" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.05s" x="74" y="30" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.61s" x="168" y="87" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.16s" x="500" y="107" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.06s" x="684" y="19" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.36s" x="586" y="80" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.32s" x="358" y="127" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.36s" x="467" y="17" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.79s" x="276" y="121" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.92s" x="66" y="15" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:3.97s" x="317" y="147" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.14s" x="841" y="114" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.09s" x="395" y="88" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.67s" x="472" y="90" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.24s" x="119" y="126" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.52s" x="786" y="73" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:1.56s" x="253" y="101" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:0.32s" x="892" y="127" width="2" height="2" fill="#A78BFA"/><rect class="dust" style="animation-delay:2.2s" x="459" y="102" width="2" height="2" fill="#A78BFA"/>
+
+<!-- lab tubes -->
+<g>
+  <rect x="58" y="144" width="40" height="122" fill="#14112B" stroke="#3B3270" stroke-width="3"/>
+  <rect x="61" y="194" width="34" height="69" fill="#2E8B57" opacity=".55"/>
+  <rect x="52" y="138" width="52" height="10" fill="#3B3270"/>
+  <rect x="802" y="144" width="40" height="122" fill="#14112B" stroke="#3B3270" stroke-width="3"/>
+  <rect x="805" y="184" width="34" height="79" fill="#2E8B57" opacity=".55"/>
+  <rect x="796" y="138" width="52" height="10" fill="#3B3270"/>
+  <rect class="bubble" style="animation-delay:0s" x="70" y="240" width="5" height="5" fill="#B9FFD0"/><rect class="bubble" style="animation-delay:1.2s" x="82" y="240" width="5" height="5" fill="#B9FFD0"/><rect class="bubble" style="animation-delay:2.3s" x="76" y="240" width="5" height="5" fill="#B9FFD0"/><rect class="bubble" style="animation-delay:0.6s" x="812" y="240" width="5" height="5" fill="#B9FFD0"/><rect class="bubble" style="animation-delay:1.8s" x="826" y="240" width="5" height="5" fill="#B9FFD0"/><rect class="bubble" style="animation-delay:2.9s" x="818" y="240" width="5" height="5" fill="#B9FFD0"/>
+</g>
+
+<!-- alarm light + label -->
+<rect class="alarm" x="436" y="18" width="28" height="12" rx="2"/>
+<text class="tag" x="450" y="48" text-anchor="middle" fill="#FF4D6D">SUBJECT ESCAPED</text>
+
+<!-- title -->
+<text class="title" x="450" y="112" text-anchor="middle" fill="#EDE9FE">NIGHTKIIRO</text>
+<g class="type">
+  <text class="sub" x="450" y="142" text-anchor="middle" fill="#A78BFA">&gt; cybersecurity · dev · pixel slimes</text>
+</g>
+<rect class="cursor" x="640" y="129" width="10" height="16" fill="#7CFC9A"/>
+
+<!-- floor -->
+<rect x="0" y="266" width="900" height="34" fill="#14112B"/>
+<rect x="0" y="266" width="900" height="4" fill="#3B3270"/>
+<rect x="0" y="226" width="900" height="40" fill="url(#glow)"/>
+
+<!-- slimes: walk toward each other, merge, split back -->
+<g class="left"><g transform="translate(270 196)"><g class="bob"><use href="#slime"/></g></g></g>
+<g class="right"><g transform="translate(546 196)"><g class="bob2"><use href="#slime"/></g></g></g>
+<g class="merge" transform="translate(387.0 161.0) scale(1.5)"><use href="#slime"/></g>
+
+<!-- CRT scanline -->
+<rect class="scan" x="0" y="0" width="900" height="3" fill="#A78BFA" opacity=".12"/>
+</svg>
